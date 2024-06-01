@@ -1,0 +1,6 @@
+@CustomerService_HostAddress = http://localhost:5258
+
+GET {{CustomerService_HostAddress}}/Customers/1
+Accept: application/json
+
+###
