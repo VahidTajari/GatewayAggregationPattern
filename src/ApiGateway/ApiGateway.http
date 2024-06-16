@@ -1,6 +1,7 @@
-@ApiGateway_HostAddress = http://localhost:5235
 
-GET {{ApiGateway_HostAddress}}/customer/1/orders
+@ApiGateway_HostAddress = http://localhost:8082
+
+GET {{ApiGateway_HostAddress}}/api/customer/1/orders
 Accept: application/json
 
 ###

@@ -2,26 +2,26 @@
   "Routes": [
     {
       "UpstreamHttpMethod": [ "Get" ],
-      "UpstreamPathTemplate": "/customers/{customerId}",
-      "DownstreamPathTemplate": "/customers/{customerId}",
+      "UpstreamPathTemplate": "/api/customers/{customerId}",
+      "DownstreamPathTemplate": "/api/customers/{customerId}",
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
-          "Port": 5258
+          "Port": 8080
         }
       ],
       "Key": "customer"
     },
     {
       "UpstreamHttpMethod": [ "Get" ],
-      "UpstreamPathTemplate": "/orders/{customerId}",
-      "DownstreamPathTemplate": "/orders/{customerId}",
+      "UpstreamPathTemplate": "/api/orders/{customerId}",
+      "DownstreamPathTemplate": "/api/orders/{customerId}",
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
-          "Port": 5260
+          "Port": 8081
         }
       ],
       "Key": "orders"
@@ -29,7 +29,7 @@
   ],
   "Aggregates": [
     {
-      "UpstreamPathTemplate": "/customer/{customerId}/orders",
+      "UpstreamPathTemplate": "/api/customer/{customerId}/orders",
       "RouteKeys": [ "customer", "orders" ]
     }
   ]

@@ -3,7 +3,7 @@ using Microsoft.AspNetCore.Mvc;
 namespace CustomerService.Controllers
 {
     [ApiController]
-    [Route("[controller]")]
+    [Route("api/[controller]")]
     public class CustomersController : ControllerBase
     {
         private static readonly Customer[] Customers = new[]

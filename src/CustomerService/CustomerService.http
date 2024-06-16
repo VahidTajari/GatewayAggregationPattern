@@ -1,6 +1,8 @@
-@CustomerService_HostAddress = http://localhost:5258
 
-GET {{CustomerService_HostAddress}}/Customers/1
+@CustomerService_HostAddress = http://localhost:8080
+
+#/api/customers/{customerId}
+GET {{CustomerService_HostAddress}}/api/customers/1
 Accept: application/json
 
 ###
